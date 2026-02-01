@@ -25,3 +25,14 @@ This launches a local Surfnet validator and deploys your program.
 This will execute the tests in `tests/anchor-vault-q4-25.ts`, covering initialize, deposit, withdraw, and close scenarios.
 
 For standard local testing without Surfpool, just run `anchor test`.
+
+## Test Results
+```
+anchor_vault_q4_25
+  ✓ Initialize the vault (402ms)
+  ✓ Deposit SOL into the vault (399ms)
+  ✓ Withdraw SOL from the vault (405ms)
+  ✓ Close the vault (404ms)
+
+4 passing (2s)
+```
