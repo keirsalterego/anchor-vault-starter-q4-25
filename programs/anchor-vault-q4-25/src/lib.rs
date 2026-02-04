@@ -162,6 +162,7 @@ pub struct Close<'info> {
         seeds = [b"state", user.key().as_ref()],
         bump = vault_state.state_bump,
         close = user,
+        constraint = vault_state.to_account_info().owner == &crate::ID,
     )]
     pub vault_state: Account<'info, VaultState>,
     pub system_program: Program<'info, System>,
